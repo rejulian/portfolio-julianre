@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import LinkedIn from "../icons/LinkedIn.astro";
 import GitHub from "../icons/GitHub.astro";
+import Badge from "../components/Badge.astro"
 ---
 
 <Layout
@@ -15,7 +16,7 @@ import GitHub from "../icons/GitHub.astro";
 				src="https://avatars.githubusercontent.com/u/1561955?v=4"
 				alt="Julian photo"
 			/>
-			<h1 class="text-white text-5xl font-bold pb-4">Hey, I'm Julian</h1>
+			<h1 class="text-white text-5xl font-bold pb-4 flex flex-row items-center gap-x-2">Hey, I'm Julian <Badge>Available for hire</Badge></h1>
 			<h2 class="text-2xl opacity-80 text-wrap">
 				+1 year of experience as a <span class="text-yellow-200	">Fullstack Web Developer</span>. Based in San
 				Nicolas, Argentina. Specialized in best practices and
