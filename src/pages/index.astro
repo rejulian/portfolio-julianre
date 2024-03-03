@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import LinkedIn from "../icons/LinkedIn.astro";
-import GitHub from "../icons/GitHub.astro";
+import Hero from "../components/Hero.astro";
 import User from "../icons/User.astro";
 import ExperienceIcon from "../icons/ExperienceIcon.astro";
-import Badge from "../components/Badge.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import About from "../components/About.astro";
 ---
 
 <Layout
@@ -14,35 +13,9 @@ import SectionContainer from "../components/SectionContainer.astro";
 	description="Contrata a Julian Re para crear tu aplicación web. Desarrollador y Programador web. Especializado en crear aplicaciones únicas."
 >
 	<main>
+		<!-- HERO SECTION -->
 		<SectionContainer id="home" class="pt-44 pb-24">
-			<img
-				class="rounded-full size-16 mb-4"
-				src="https://avatars.githubusercontent.com/u/1561955?v=4"
-				alt="Julian photo"
-			/>
-			<h1
-				class="text-white text-5xl font-bold pb-4 flex flex-row items-center gap-x-2"
-			>
-				Hey, I'm Julian <Badge>Available for hire</Badge>
-			</h1>
-			<h2 class="text-2xl opacity-80 text-wrap">
-				+1 year of experience as a <span class="text-yellow-200"
-					>Fullstack Web Developer</span
-				>. Based in San Nicolas, Argentina. Specialized in best
-				practices and exceptional user experiences.
-			</h2>
-			<ul class="flex flex-row gap-x-4 mt-4">
-				<li>
-					<a target="_blank" href="https://www.linkedin.com/in/j-re"
-						><LinkedIn class="size-6 text-white" /></a
-					>
-				</li>
-				<li>
-					<a target="_blank" href="https://www.github.com/rejulian"
-						><GitHub class="size-6 text-white" /></a
-					>
-				</li>
-			</ul>
+			<Hero/>
 		</SectionContainer>
 
 		<!-- EXPERIENCE SECTION -->
@@ -62,22 +35,7 @@ import SectionContainer from "../components/SectionContainer.astro";
 			>
 				<User class="size-8"/>About Me 
 			</h2>
-			<div class="flex flex-col gap-y-8">
-				<p>
-					My name is Julian but my friends called me Tuko. I am a
-					passionate web developer with more than one year of
-					experience, focused on creating <strong
-						>exceptional applications</strong
-					>
-					using React, Node, and Express.
-				</p>
-
-				<p>
-					My goal is to turn your ideas into digital reality,
-					providing cutting-edge solutions and an extraordinary user
-					experience.
-				</p>
-			</div>
+			<About/>
 		</SectionContainer>
 	</main>
 </Layout>
